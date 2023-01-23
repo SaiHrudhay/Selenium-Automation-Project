@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.XYZ.tests.CustomerTest">
+        <methods>
+          <include name="b_deposit" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="c_withdrawl" invocation-numbers="0"/>
+          <include name="transaction"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.XYZ.tests.CustomerTest -->
+      <class name="com.XYZ.tests.ManagerTest">
+        <methods>
+          <include name="verifyOpenAccount"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.XYZ.tests.ManagerTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
